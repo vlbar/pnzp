@@ -12,10 +12,11 @@ public class MultNode implements INode {
     }
 
     public int calculate() {
-        if (leftNode.calculate() == 0)
+        int leftValue = leftNode.calculate();
+        if (leftValue == 0)
             return 0;
         else
-            return leftNode.calculate() * rightNode.calculate();
+            return left * rightNode.calculate();
     }
 
     public String toString() {
