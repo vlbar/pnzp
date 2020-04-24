@@ -16,7 +16,7 @@ public class MultNode implements INode {
         if (leftValue == 0)
             return 0;
         else
-            return left * rightNode.calculate();
+            return leftValue * rightNode.calculate();
     }
 
     public String toString() {
